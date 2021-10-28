@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <h1 id= "title">Conversor de moedas</h1>
+        <p class="aviso">com um variação média de -0,97%</p>
+        <form id="form">
+          <p class="label">Valor em Real:</p>
+          <input type="number" id="valor" min="0" step="0.01" placeholder="0,00"/>
+
+          <p class="label">Converter para:</p>
+          <select id="converterPara">
+            <option value="dolar">Dólar (USD)</option>
+            <option value="euro">Euro (EUR)</option>
+            <option value="bitcoin">Bitcoin(BTC)</option>
+            <option value="iene">Iene(JPY)</option>
+          </select>
+          <input type="button" value="converter" onclick="converter()" />
+        </form> 
+        <div id="resultado"></div>
+      </div>
+     <div id="saibaMais">
+      
+     </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
